@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Learn CI/CD with Husky & GitHub Actions (Next.js Example)
 
-## Getting Started
+This project is a hands-on guide for developers who want to **learn and implement a CI/CD pipeline** using **Husky**, **GitHub Actions**, and **Vitest** in a **Next.js** application. By exploring this repo, you’ll gain practical experience in setting up a professional development workflow from scratch.
 
-First, run the development server:
+👉 freeCodeCamp tutorial - [How to Set Up a CI/CD Pipeline with Husky and GitHub Actions](https://www.freecodecamp.org/news/how-to-set-up-a-ci-cd-pipeline-with-husky-and-github-actions)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+#### 🧠 What You'll Learn
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* How **CI/CD** works in modern web development
+* Setting up **Husky Git hooks** to lint and test code before every commit
+* Using **lint-staged** to speed up checks by only scanning staged files
+* Creating **GitHub Actions workflows** to:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+  * Run linting and unit tests on every push
+  * Run coverage reports on every pull request
+  * Automatically report test coverage as PR comments
+* Connecting with **Vercel** for automatic deployments
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+#### 💠 Technologies Used
 
-## Learn More
+* [Next.js](https://nextjs.org/)
+* [Vitest](https://vitest.dev/)
+* [ESLint](https://eslint.org/)
+* [Husky](https://typicode.github.io/husky)
+* [lint-staged](https://github.com/okonet/lint-staged)
+* [GitHub Actions](https://github.com/features/actions)
+* [Vercel](https://vercel.com/)
 
-To learn more about Next.js, take a look at the following resources:
+#### 📘 How to Use This Project
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Clone the repo** and install dependencies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   git clone https://github.com/sasmithaK/hands-on-CI-CD
+   hands-on-CI-CD
+   npm install
+   ```
+2. **Inspect the pre-commit file under the demo-app/.husky**
 
-## Deploy on Vercel
+   * Contains scripts that automatically run linting and tests before every commit to ensure code quality.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **Inspect the workflow YML files under the demo-app/.github/workflows**
+
+   * Define GitHub Actions that run on push and pull_request events to automate testing, linting, and code coverage reporting.
+
+
+4. **Make a change and commit it**
+
+   * Husky will run lint and test checks before the commit is finalized.
+
+5. **Push to GitHub**
+
+   * GitHub Actions will automatically run tests and lint your code.
+   * Open a PR to see coverage reports posted as comments.
+
+6. **Deploy automatically with Vercel**
+
+   * You can deploy it on Vercal. 
+   * Any change merged to `main` will trigger a Vercel deployment.
+
+---
+
+Feel free to fork this project, experiment with the workflow files, and adapt it to your own apps. It’s designed to help you build solid CI/CD habits early in your development journey.
