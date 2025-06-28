@@ -7,7 +7,7 @@ export default defineConfig({
     environment: "jsdom",
     coverage: {
       provider: "v8",
-      extension: [".tsx"],
+      extension: [".jsx"],
       reporter: ['text', 'json-summary', 'json'],
     },
   },
