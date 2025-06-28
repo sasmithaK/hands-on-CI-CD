@@ -16,4 +16,4 @@ jobs:
           run: npm run build
 
         - name: Run tests and coverage
-          run: npm run coverage
+          run: npx run coverage
