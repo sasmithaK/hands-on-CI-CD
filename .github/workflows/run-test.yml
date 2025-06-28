@@ -1,7 +1,8 @@
-name: CI workflow
+name: Run linter and tests on push
 on:
-    push
-    
+    push:
+        branches:
+            - main
 jobs:
     run-linter-and-tests:
         runs-on: windows-latest
