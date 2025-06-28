@@ -1,4 +1,4 @@
-# 🚀 Learn CI/CD with Husky & GitHub Actions (Next.js Example)
+# 🚀 Learn CI/CD with Husky & GitHub Actions (Next.js Example) - tutorial by freeCodeCamp
 
 This project is a hands-on guide for developers who want to **learn and implement a CI/CD pipeline** using **Husky**, **GitHub Actions**, and **Vitest** in a **Next.js** application. By exploring this repo, you’ll gain practical experience in setting up a professional development workflow from scratch.
 
