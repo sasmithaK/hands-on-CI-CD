@@ -1,18 +1,18 @@
-name: Run linter and tests on push
+name: CI workflow
 on:
     push:
-        branches:
-            - master
+
+
 jobs:
     run-linter-and-tests:
-        runs-on: windows-latest
+        runs-on: ubuntu-latest
 
         steps:
             - name: Checkout code
               uses: actions/checkout@v4
 
             - name: Install dependencies
-              uses: npm i
+              run: npm i
               
             - name: Lint code
               run: npm run lint
