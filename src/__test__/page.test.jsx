@@ -1,7 +1,7 @@
-import { expect, test } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import Page from '../app/page'
- 
+import { test, expect } from 'vitest'
+import Page from '../app/Page'
+
 test('Page', () => {
   render(<Page />)
   expect(screen.getByRole('heading', { level: 1, name: 'Home' })).toBeDefined()
