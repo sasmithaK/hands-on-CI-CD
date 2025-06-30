@@ -26,6 +26,12 @@ This project is a hands-on guide for developers who want to **learn and implemen
 * [GitHub Actions](https://github.com/features/actions)
 * [Vercel](https://vercel.com/)
 
+#### 🤔 What are Husky and GitHub Actions❓
+* 🐶 Husky helps you run scripts automatically before you commit or push code (like linting or tests). It ensures your code is clean before it gets to GitHub.
+* ⚙️ GitHub Actions lets you automate tasks like testing, building, or deploying your project after code is pushed to GitHub. It runs workflows in the cloud, so your project stays reliable and up to date.
+
+Together, they help keep your code clean, tested, and production-ready — from your local machine to the cloud. 🚀
+
 #### 📘 How to Use This Project
 
 1. **Clone the repo** and install dependencies
